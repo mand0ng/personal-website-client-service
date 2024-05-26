@@ -6,13 +6,8 @@ import { useState, useMemo } from "react";
 let socket;
 
 export const initSocket = () => {
-
-    // const socketUrl = process.env.REACT_APP_SOCKET_URL || "http://localhost:3001";
-    // const socketUrl = "http://localhost";
-    const socketUrl = "https://my-personal-website-craqo.ondigitalocean.app"
-
-    console.log("socketURL: ", socketUrl);
-    // socket = io(socketUrl, { path: "/ws/", transports: ["websocket"] });
+    const socketUrl = process.env.NEXT_PUBLIC_SOCKET_URL;
+    console.log("SOCKETUTILS:: socketUrl: ", socketUrl);
     socket = io(socketUrl, { path: "/ws", transports: ["websocket"] });
 
     socket.on("connect", () => {

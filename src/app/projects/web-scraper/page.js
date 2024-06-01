@@ -17,7 +17,8 @@ export default function WebScraper() {
 
     // const API_BASE_URL = process.env.API_BASE_URL || "http://localhost:5000";
     // const API_BASE_URL = "http://localhost/api";
-    const API_BASE_URL = "https://my-personal-website-craqo.ondigitalocean.app/api";
+    // const API_BASE_URL = "https://my-personal-website-craqo.ondigitalocean.app/api";
+    const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
     const [searchText, setSearchText] = useState("");
     const [loading, setLoading] = useState(false);

@@ -14,7 +14,7 @@ export default function Home() {
             <span className="text-primary font-bold text-lg"> Emmanuel!</span>
           </section>
 
-          <section className="body-content p-5 lg:p-10">
+          <section className="body-content p-5 lg:p-10 text-sm md:text-base">
             <p className="text-secondary">
               A passionate <span className="font-bold">Information Communications Technology</span> graduate of the {" "}
               <span className="btn rounded bg-button align-middle p-0.5">

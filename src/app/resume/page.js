@@ -21,17 +21,6 @@ export default function Resume() {
                 </p>
             </section>
 
-            {/* <section className="mb-8">
-                <h2 className="text-xl font-bold mb-2">Skills</h2>
-                <ul className="list-disc pl-6">
-                    <li>Time Management: Proficient in managing schedules, prioritizing tasks, and meeting deadlines effectively.</li>
-                    <li>Attention to Detail: Meticulous and thorough in tasks, ensuring accuracy and precision in all aspects of work.</li>
-                    <li>Problem-solving: Adept at identifying problems, analyzing situations, and implementing practical solutions.</li>
-                    <li>Teamwork: Collaborative and cooperative in team environments, contributing to group success and fostering positive working relationships.</li>
-                    <li>Adaptability: Quick to adapt to new situations, environments, and responsibilities, ensuring flexibility in diverse work settings.</li>
-                </ul>
-            </section> */}
-
             <section className="mb-8">
                 <h2 className="text-xl font-bold mb-2">Education</h2>
                 <div className="mb-4">
@@ -48,28 +37,38 @@ export default function Resume() {
                     <h3 className="font-bold">Forty Degrees Celsius Inc. / Android Application Developer</h3>
                     <p className="text-sm">JUNE 2020 - NOVEMBER 2023, Cebu, Philippines</p>
                     <ul className="list-disc pl-6">
-                        <li>Responsible for the maintaining and updating of a streaming application aimed for the Japanese audience </li>
-                        <li>Resolving issues in Firebase Crashlytics and version bugs.</li>
-                        <li>Implementing innovative features, including revamped UI designs, streamer missions, and customization of in-stream gifts and stickers.</li>
-                        <li>Was responsible on updating Bluetooth implementation to cater android 12 phones </li>
+                        <li>Maintained and Updated a streaming application aimed for the Japanese market, ensuring smooth performance and user satisfaction.</li>
+                        <li>Diagnosed and fixed issues reported through Firebase Crashlytics, significantly reducing app crashes and improving user experience.</li>
+                        <li>Implemented innovative features, such as revamped UI designs, streamer missions, and customized in-stream gifts and stickers.</li>
+                        <li>Upgraded Bluetooth functionalities to support Android 12, improving compatibility and user experience. </li>
                     </ul>
                 </div>
                 <div className="ml-2 mb-4">
                     <h3 className="font-bold">Time River Design Inc. / Website Developer</h3>
                     <p className="text-sm">JULY 2019 - MARCH 2020, Cebu, Philippines</p>
                     <ul className="list-disc pl-6">
-                        <li>Responsible for maintaining a WordPress website for models from Japan. </li>
-                        <li>Added functionalities such as search filter and optimized the pagination of data to improve loading times.</li>
-                        <li>Developed custom-built frontend in HTML and CSS, augmented with JavaScript, to ensure optimal performance with a page speed score</li>
+                        <li>Managed and updated a WordPress website for Japanese models, ensuring up-to-date content and functionality.</li>
+                        <li>Added functionalities such as search filters and optimized pagination of data, reducing loading times and improving user experience.loading times.</li>
+                        <li>Designed and developed custom front-end components using HTML, CSS, and JavaScript, ensuring an intuitive user interface and enhanced usability.</li>
                     </ul>
                 </div>
             </section>
             <section className="mb-8">
                 <h2 className="text-xl font-bold mb-2">Technology Stack</h2>
                 <ul className="list-disc pl-6">
-                    <li>Android Studio, Java, XML, Lottie Files</li>
-                    <li>HTML, CSS, JavaScript, jQuery, Node.js, Express.js, Next.js, PHP, MySQL, PostgresSQL CakePHP, Laravel, WordPress, Python, Vue.js, Ionic,</li>
-                    <li>GitHub, Jira, Figma, Adobe XD, Docker, VirtualBox</li>
+                    <li>Web Development:</li>
+                    <ul className="list-disc pl-6">
+                        <li>Front-end: HTML, CSS, WordPress, JavaScript, jQuery, Angular.js, Vue.js, React, Next.js</li>
+                        <li>Back-End: PHP, CodeIgniter, Laravel, CakePHP, Python, Flask, MySQL, SQLite, PostgreSQL</li>
+                    </ul>
+                    <li>Android Development:</li>
+                    <ul className="list-disc pl-6">
+                        <li>Java, Kotlin, Android Studio, XML, Lottie Files</li>
+                    </ul>
+                    <li>DevOps & Tools:</li>
+                    <ul className="list-disc pl-6">
+                        <li>Platforms: Docker, VirtualBox, GitHub, Jira, Adobe XD, Figma, Digital Ocean, Google Console</li>
+                    </ul>
                 </ul>
             </section>
 
@@ -79,14 +78,9 @@ export default function Resume() {
                     <h3 className="font-bold">Seafood City Winnipeg / Grill City Staff</h3>
                     <p className="text-sm">November 2023 - March 2024, Winnipeg, Canada</p>
                     <ul className="list-disc pl-6">
-                        <li>Prepared and packed customer orders with meticulous attention to detail.</li>
-                        <li>Skillfully cooked a variety of grilled items.</li>
-                        <li>Maintained a clean and organized workspace, ensuring the proper sanitation of all cooking equipment during and after shifts.</li>
-                        <li>Assisted in produce packing, ensuring freshness and quality.</li>
-                        <li>Provided cashier services, handling transactions accurately and efficiently.</li>
-                        <li>Served customers in a friendly and attentive manner, ensuring a positive dining experience.</li>
-                        <li>Restocked supplies and managed inventory levels, ensuring optimal stock levels for a smooth operation.</li>
-                        <li>Worked with team members to ensure a clean and organized store environment, including sweeping and mopping floors, cleaning equipment, and restocking shelves.</li>
+                        <li>Skillfully cooking a variety of grilled items, meticulously prepared and packed customer orders while maintaining cleanliness and sanitation of workspace and equipment.</li>
+                        <li>Assisted in produce packing to ensure freshness and quality, while also restocking supplies and managing inventory levels to maintain optimal stock levels for smooth operation.</li>
+                        <li>Provided accurate and efficient cashier services and served customers in a friendly manner, ensuring a positive dining experience.</li>
                     </ul>
                 </div>
                 <div className="ml-1 mb-4">

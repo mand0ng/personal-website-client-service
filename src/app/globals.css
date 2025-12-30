@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,23 +14,137 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+:root,
+html.light {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --primary: #3b82f6;
+  --primary-rgb: 59, 130, 246;
+  /* More visible blue */
+  --secondary: #64748b;
+  --secondary-rgb: 100, 116, 139;
+  --accent: #8b5cf6;
+  --muted: #f1f5f9;
+  --border: #e2e8f0;
+  --surface: #ffffff;
+  --surface-rgb: 255, 255, 255;
+
+  --header-background: #f1f5f9;
+  --footer-background: #f1f5f9;
+  --card-background: #ffffff;
+
+  --button-bg: #e2e8f0;
+  --link-bg: #f1f5f9;
+  --link-text: #0f172a;
+}
+
+/* Dark mode */
+html.dark [data-theme='dark'],
+html.dark,
+[data-theme='dark'] {
+  --background: #020617;
+  --foreground: #f8fafc;
+  --primary: #60a5fa;
+  --primary-rgb: 96, 165, 250;
+  /* Brighter blue for dark mode */
+  --secondary: #94a3b8;
+  --secondary-rgb: 148, 163, 184;
+  --accent: #a78bfa;
+  --muted: #1e293b;
+  --border: #1e293b;
+  --surface: #0f172a;
+  --surface-rgb: 15, 23, 42;
+  /* Slightly lighter than background */
+
+  --header-background: #0f172a;
+  --footer-background: #0f172a;
+  --card-background: #1e293b;
+
+  --button-bg: #1e293b;
+  --link-bg: #1e293b;
+  --link-text: #f8fafc;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'FunnelDisplay', Arial, Helvetica, sans-serif;
 }
+
+/* Use in other elements */
+.font-code {
+  font-family: 'CascadiaCode', 'RobotoMono', monospace;
+}
+
+.my-header {
+  background-color: var(--header-background);
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.my-footer {
+  background-color: var(--footer-background);
+}
+
+.primary-text {
+  color: var(--primary);
+}
+
+.sub-text {
+  color: var(--secondary);
+}
+
+.secondary-text {
+  color: var(--foreground);
+  opacity: 0.8;
+}
+
+.my-card-bg {
+  background-color: var(--card-background);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-  
+
+}
+
+.text-outline {
+  -webkit-text-stroke: 0.5px var(--border);
 }
 
 .journal-scroll::-webkit-scrollbar {
@@ -38,16 +152,15 @@ body {
   cursor: pointer;
   /* background-color: rgba(229, 231, 235, var(--bg-opacity)); */
 }
+
 .journal-scroll::-webkit-scrollbar-track {
   background-color: rgba(229, 231, 235, var(--bg-opacity));
   cursor: pointer;
   border-radius: 10px;
 }
+
 .journal-scroll::-webkit-scrollbar-thumb {
   cursor: pointer;
   background-color: #a0aec0;
   border-radius: 10px;
 }
-
-
-

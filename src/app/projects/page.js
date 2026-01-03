@@ -37,7 +37,13 @@ export default function Projects() {
             imageUrl: "https://plus.unsplash.com/premium_photo-1761260674879-ccd95f2316ab?q=80&w=725&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             url: "https://liqour-sign-maker.emmanuelpedroza.com/",
             clickable: true
-        }
+        },
+        {
+            title: "Cover Letter Maker",
+            imageUrl: "https://media.istockphoto.com/id/1348546519/photo/businessman-hand-is-on-the-trackpad-typing-on-a-laptop-keyboard-while-reading-a-business.jpg?s=612x612&w=0&k=20&c=u3o54duWjetXw_vmxgyy8zDoP2wtQs3mmhfZ47DlzvY=",
+            url: "https://cover-letter-maker.emmanuelpedroza.com/",
+            clickable: true
+        },
     ];
 
     const navigate = (project) => {
